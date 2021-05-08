@@ -1,0 +1,37 @@
+{
+  "name": "itvdn-landing",
+  "version": "1.0.0",
+  "description": "This is langing online-zoo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dimadzu/testKeyUA"
+  },
+  "author": "Dmitriy  Dziuba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dimadzu/testKeyUA"
+  },
+  "homepage": "https://github.com/Dimadzu/testKeyUA",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp.spritesmith": "^6.3.0",
+    "pug": "^3.0.2",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize-scss": "^7.0.1"
+  }
+}

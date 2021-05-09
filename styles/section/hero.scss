@@ -1,1 +1,158 @@
+.hero {
+    height: 840px;
+    position: relative;
+    .form {
+        position: absolute;
+        @include centerer-x();
+        top: 600px;
+        width: 1050px;
+        max-height: 300px;
+        margin: 0 auto;
+        .relative {
+            position: relative;
+        }
+        &-left {
+            padding: 19px 40px 34px 40px;
+            height: 100%;
+            background: linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%);
+            border-radius: 10px 0 0 10px;
+            .form-banner {
+                position: absolute;
+                left: 210px;
+                top: 0px;
+                width: 690px;
+                height: 60px;
+                display: flex;
+                justify-content: space-between;
+                &-left {
+                    padding: 2px 51px 2px 16px;
+                    width: 536px;
+                    height: 100%;
+                    background-image: url(../../assets/images/form-banner-left.png);
+                    display: flex;
+                    box-shadow: -5px 3px 6px rgba(0, 0, 0, 0.5);
+                    h4 {
+                        font-size: 43.0504px;
+                        line-height: 57px;
+                        color: #FFFFFF;
+                        margin: auto 0;
+                    }
+                    .border {
+                        height: 45px;
+                        width: 1px;
+                        margin: auto 0;
+                        background-color: #FFFFFF;
+                        margin-left: 5px;
+                    }
+                    &-desc {
+                        height: 51px;
+                        display: flex;
+                        flex-direction: column;
+                        margin: auto 0px auto 10px;
+                        p {
+                            font-weight: 200;
+                            font-size: 18px;
+                            line-height: 24px;
+                            letter-spacing: 0.0947368px;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+                &-right {
+                    width: 154px;
+                    background-image: url(../../assets/images/form-banner-right.png);
+                    text-align: right;
+                    padding: 5px 14px;
+                    h4 {
+                        font-size: 33.0504px;
+                        color: #FFFFFF;
+                        margin: auto 0;
+                    }
+                    p {
+                        font-size: 11px;
+                        margin: -9px 5px 0 0;
+                    }
+                }
+            }
+            h3 {
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 29px;
+                letter-spacing: 0.808081px;
+                color: #FFFFFF;
+            }
+            p {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0.727273px;
+                margin-top: 39px;
+                color: #FFFFFF;
+            }
+        }
+        &-right {
+            height: 270px;
+            background: linear-gradient(317.76deg, #FF7800 20.02%, #FFA600 68.68%, #FFA600 83.15%);
+            border-radius: 0px 10px 10px 0;
+            margin-left: -2px;
+            margin-top: 45px;
+        }
+        .form-check-input {
+            border: 1px solid #CC2229;
+        }
+        .form-check-input:checked[type=radio] {
+            background-image: url(../../assets/images/oval.png);
+            background-size: contain;
+        }
+    }
+}
 
+.form-check-label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.wrapper-hero {
+    width: 1400px;
+}
+
+.hero-title {
+    &__h1 {
+        margin-top: 80px;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 70px;
+        letter-spacing: 0.818182px;
+        color: #575C6B;
+    }
+}
+
+.hero-bg {
+    background-image: url(../../assets/images/divorse_bg_hero.png);
+    background-size: cover;
+    height: 900px;
+    background-position: right;
+}
+
+.desription-container {
+    display: flex;
+    flex-direction: column;
+    &_item {
+        display: flex;
+        width: 450px;
+        margin-top: 24px;
+        &__img {
+            margin-top: -7%;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.727273px;
+            color: #575C6B;
+            margin-left: 40px;
+        }
+    }
+}

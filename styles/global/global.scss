@@ -1,34 +1,46 @@
-html{
-  margin: 0;padding: 0;box-sizing: border-box;
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
     font-family: 'Exo';
     font-style: normal;
     font-weight: 400;
     background: #FCFCFC;
-    margin: 0;padding: 0;box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     overflow-x: hidden;
-    
-  }
-  
-  
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-  :active, :hover, :focus {
+}
+
+ :active,
+ :hover,
+ :focus {
     outline: 0;
     outline-offset: 0;
 }
-  ul{
+
+ul {
     padding: 0;
-  }
-  li{
+}
+
+li {
     list-style-type: none;
-  }
-  a{
-      text-decoration: none;
-  }
-.wrapper{
-  width: 1120px;
-  margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
 }

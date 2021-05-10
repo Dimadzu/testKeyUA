@@ -47,7 +47,21 @@ section.hero
                         label.form-check-label(for="inlineRadio4") No
 
                 .col-xxl-6.col-xl-6.col-lg-6.col-md-6.col-sm-6.col-6.form-right
-                    
+                    .form-right_wrapper
+                        .form-container
+                            .select-input 
+                                input.form-container__input.form-container__input__first-select(type="text" required  placeholder="Seleccione su estado")
+                                .select-input-cont
+                                    .select-input-cont-img   
+                                        img.select-input-cont_img(src="./assets/images/sort_arrow.png")
+                                        img.select-input-cont_img.select-input-cont_img__up(src="./assets/images/sort_arrow.png")
+                            input.form-container__input(type="text" required  placeholder="Nombre")
+                        .form-container
+                            input.form-container__input.form-container__input__first(type="text" required  placeholder="Ingrese su correo el")
+                            input.form-container__input(type="text" required  placeholder="Apellido")
+                        button.form-container__button(type="submit") Verificar elegibilidad
+                        p Al hacer clic en “Verificar Elegibilidad”, usted acepta los Términos y Condiciones
+
 
 
 

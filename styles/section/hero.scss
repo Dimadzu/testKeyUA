@@ -1,7 +1,6 @@
 .hero {
     height: 840px;
     position: relative;
-    background-color: lighten(#E3E3E3, 10%);
     .form {
         position: absolute;
         @include centerer-x();

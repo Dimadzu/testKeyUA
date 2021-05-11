@@ -63,21 +63,24 @@
             letter-spacing: 0.545455px;
             color: #575C6B;
         }
-        .before {
-            z-index: 20;
-            position: relative;
-            margin-left: 37px;
-            margin-top: -4px;
-        }
-        .before::before {
-            z-index: 20;
-            content: '';
-            position: absolute;
-            background-image: url(../../assets/images/rectangle.png);
-            width: 15px;
-            height: 15px;
-            left: -37px;
-        }
+    }
+    .before {
+        z-index: 20;
+        position: relative;
+        margin-left: 37px;
+        margin-top: -4px;
+    }
+    .before::before {
+        z-index: 20;
+        content: '';
+        position: absolute;
+        background-image: url(../../assets/images/rectangle.png);
+        width: 15px;
+        height: 15px;
+        left: -37px;
+    }
+    .before__right::before {
+        background-image: url(../../assets/images/ok.png);
     }
     &-right {
         padding: 0;
@@ -87,6 +90,34 @@
             background: linear-gradient(180deg, #FFA700 0%, #FF7A00 46.38%, #FF6E00 100%);
             box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.238338);
             border-radius: 5px;
+            padding: 24px 26px 30px 18px;
+            &__cont {
+                text-align: center;
+                width: 320px;
+                margin: 0 auto;
+                h3 {
+                    margin-top: 11px;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    text-align: center;
+                    letter-spacing: 0.545455px;
+                    color: #FFFFFF;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.545455px;
+                color: #FFFFFF;
+                margin-top: 19px;
+            }
         }
+    }
+    .revice-right_logo__container {
+        display: flex;
+        width: 362px;
+        justify-content: space-between;
+        margin: 16px auto 0 auto;
     }
 }

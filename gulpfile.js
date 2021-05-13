@@ -34,7 +34,7 @@ gulp.task('js', function() {
             'js/main.js'
         ])
         .pipe(sourcemaps.init())
-        .pipe(concat('main.min.js'))
+        .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/js'));
@@ -72,6 +72,7 @@ gulp.task('copy', gulp.parallel('copy:assets/fonts', 'copy:assets/images'));
 gulp.task('watch', function() {
     gulp.watch('pages/**/*.pug', gulp.series('templates:compile'));
     gulp.watch('styles/**/*.scss', gulp.series('styles:compile'));
+    gulp.watch('js/main.js', gulp.series('js'));
 });
 
 gulp.task('default', gulp.series(

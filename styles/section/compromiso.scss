@@ -1,0 +1,71 @@
+.compromiso {
+    background-color: #F5F5F5;
+    margin-top: 100px;
+    .wrapper {
+        .row {
+            text-align: center;
+            h2 {
+                margin-top: 50px;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 48px;
+                letter-spacing: 0.545455px;
+                color: #FF6E00;
+            }
+            .padding {
+                width: 100%;
+                padding: 0 15%;
+            }
+            p {
+                line-height: 21px;
+                letter-spacing: 0.484848px;
+                color: #575C6B;
+            }
+        }
+    }
+    .compromiso-item {
+        display: flex;
+        text-align: left;
+        margin-top: 46px;
+        .img {
+            width: 85px;
+            height: 78px;
+            position: relative;
+            .before__image {
+                display: block;
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                border-radius: 50px;
+                left: -30px;
+                bottom: 0px;
+                background-color: #9B9B9B;
+                opacity: .3;
+            }
+            .before__image_2 {
+                left: 22px;
+                bottom: 26px;
+                background-color: #F6CC23;
+            }
+            .before__image_3 {
+                left: 19px;
+                bottom: 22px;
+                background-color: #FF9503;
+            }
+        }
+        &_description {
+            padding: 0 25px;
+            h4 {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 21px;
+                letter-spacing: 0.484848px;
+                color: #4A4A4A;
+            }
+            p {
+                color: #4A4A4A;
+                margin-top: 6px;
+            }
+        }
+    }
+}

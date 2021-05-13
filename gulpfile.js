@@ -48,19 +48,6 @@ gulp.task('styles:compile', function() {
         .pipe(gulp.dest('build/css'));
 });
 
-/* ------------ Sprite ------------- */
-// gulp.task('sprite', function(cb) {
-//   const spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
-//     imgName: 'sprite.png',
-//     imgPath: '../images/sprite.png',
-//     cssName: 'sprite.scss'
-//   }));
-
-//   spriteData.img.pipe(gulp.dest('build/images/'));
-//   spriteData.css.pipe(gulp.dest('source/styles/global/'));
-//   cb();
-// });
-
 /* ------------ Delete ------------- */
 gulp.task('clean', function del(cb) {
     return rimraf('build', cb);

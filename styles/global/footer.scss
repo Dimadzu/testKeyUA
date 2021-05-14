@@ -67,3 +67,43 @@
         margin: 0 0 11px 0;
     }
 }
+
+//media 900px
+@media screen and (max-width: 1100px) {
+    .footer {
+        .wrapper {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .footer {
+        .footer-adress {
+            padding: 16px 0 0px 0;
+        }
+        .wrapper {
+            width: 100%;
+            padding: 0 20px;
+            .footer__border {
+                border-bottom: 0.5px solid #FFFFFF;
+            }
+        }
+        .footer-header {
+            border-bottom: 0.5px solid #FFFFFF;
+            padding-bottom: 2%;
+            .logo-link__img {
+                width: 120px;
+                height: 38px;
+            }
+            .menu {
+                nav {
+                    display: none;
+                }
+            }
+        }
+        .footer-ul {
+            margin-top: 15px;
+        }
+    }
+}

@@ -351,10 +351,12 @@
                         padding: 3px 33px;
                         h4 {
                             font-size: 27px;
+                            line-height: 28px;
                         }
                         p {
                             font-size: 7px;
                             margin: -9px 5px 0 0;
+                            line-height: 8px;
                         }
                     }
                 }
@@ -389,12 +391,12 @@
                     width: 100%;
                     .form-container {
                         input {
-                            width: 200px;
+                            width: 170px;
                         }
                         .select-input {
                             display: flex;
                             &-cont {
-                                width: 47px;
+                                width: 27px;
                                 height: 100%;
                                 background-color: white;
                                 margin-left: -2px;
@@ -420,7 +422,7 @@
                             border-radius: 5px 0 0 5px;
                         }
                         .form-container__input__first {
-                            width: 244px;
+                            width: 204px;
                         }
                     }
                     p {
@@ -457,7 +459,7 @@
     .hero-bg {
         background-image: url(../../assets/images/divorse_bg_hero_mobile.png);
         background-size: cover;
-        height: 300px;
+        height: 256px;
         background-position: bottom;
         background-repeat: no-repeat;
     }

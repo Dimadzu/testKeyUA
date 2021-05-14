@@ -1,4 +1,9 @@
 let obtImage = document.querySelector('.obtengo-container_left__image');
+if (window.innerWidth <= 575) {
+    obtImage.src = "./assets/images/obtengo_bg_left_mobile.png";
+} else {
+    obtImage.src = "./assets/images/obtengo_bg_left.png"
+}
 
 window.addEventListener('resize', function(event) {
     if (window.innerWidth <= 575) {
@@ -25,7 +30,6 @@ function Ant(crslId) {
     this.leftArrow = this.crslRoot.querySelector('.ant-carousel-arrow-left');
     this.rightArrow = this.crslRoot.querySelector('.ant-carousel-arrow-right');
     this.indicatorDots = this.crslRoot.querySelector('.ant-carousel-dots');
-    console.log(this.crslRoot);
 
     // Initialization
     this.options = Ant.defaults;
@@ -169,6 +173,12 @@ Ant.initialize = function(that) {
         that.leftArrow.style.display = 'none'; // отключить левую стрелку
         that.touchPrev = false; // отключить прокрутку прикосновением вправо
         that.options.auto = false; // отключить автопркрутку
+    } else if (!that.options.loop && window.innerWidth <= 575) {
+        that.dotsVisible = that.elemCount - 1 + 1;
+        that.leftArrow.style.display = 'none'; // отключить левую стрелку
+        that.touchPrev = false; // отключить прокрутку прикосновением вправо
+        that.options.auto = false; // отключить автопркрутку
+
     } else if (that.options.auto) { // инициализация автопрокруки
         setAutoScroll();
         // Остановка прокрутки при наведении мыши на элемент
@@ -254,3 +264,6 @@ Ant.initialize = function(that) {
 };
 
 new Ant();
+window.addEventListener('resize', function(event) {
+
+})

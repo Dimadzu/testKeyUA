@@ -4,19 +4,44 @@
     margin-top: 65px;
     text-align: center;
     .wrapper {
+        h2 {
+            font-size: 28px;
+            margin-top: 10px;
+            font-weight: 700;
+        }
         .row {
             padding: 0 90px;
-            h2 {
-                font-size: 28px;
-                margin-top: 10px;
-                font-weight: 700;
-            }
+            height: 200px;
             .item {
                 align-items: center;
                 img {
                     margin-top: 2%;
                     display: inline-block;
                     position: absolute;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .logo-deal {
+        margin-top: 30%;
+        .wrapper {
+            width: 100%;
+            .row {
+                padding: 0 90px;
+                h2 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                .item {
+                    align-items: center;
+                    img {
+                        margin-top: 2%;
+                        display: inline-block;
+                        position: absolute;
+                    }
                 }
             }
         }

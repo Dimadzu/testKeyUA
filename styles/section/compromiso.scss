@@ -69,3 +69,40 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    .compromiso {
+        .wrapper {
+            width: 100%;
+        }
+    }
+}
+
+//media 575px
+@media screen and (max-width: 575px) {
+    .compromiso {
+        margin-top: 80px;
+        padding: 0 7%;
+        .wrapper {
+            width: 100%;
+            .row {
+                text-align: center;
+                h2 {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                .padding {
+                    display: none;
+                }
+                p {
+                    line-height: 21px;
+                    letter-spacing: 0.484848px;
+                    color: #575C6B;
+                }
+            }
+        }
+        .compromiso-item {
+            margin-top: 30px;
+        }
+    }
+}

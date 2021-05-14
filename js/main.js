@@ -1,3 +1,14 @@
+let obtImage = document.querySelector('.obtengo-container_left__image');
+
+window.addEventListener('resize', function(event) {
+    if (window.innerWidth <= 575) {
+        obtImage.src = "./assets/images/obtengo_bg_left_mobile.png";
+    } else {
+        obtImage.src = "./assets/images/obtengo_bg_left.png"
+    }
+})
+
+
 function Ant(crslId) {
 
     let id = document.getElementById(crslId);
@@ -108,7 +119,7 @@ Ant.prototype.dotOn = function(num) {
 };
 
 Ant.prototype.dotOff = function(num) {
-    this.indicatorDotsAll[num].style.cssText = 'background-color:#556; cursor:default;'
+    this.indicatorDotsAll[num].style.cssText = 'background-color:#FF7100; cursor:default;'
 };
 
 Ant.initialize = function(that) {

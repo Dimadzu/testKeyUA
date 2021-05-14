@@ -1,6 +1,6 @@
 .wrapper
     header.header
-        .row
+        .row.menu-dekstop
             .col-xxl-3.col-xl-3.col-lg-4.col-md-4.col-sm-3.col-3
                 a.logo-link(href="/")
                     img.logo-link__img(src="./assets/images/logo.svg" alt="logo")
@@ -21,5 +21,25 @@
                             button Empezar
                         li.menu-select__item
                             a.active(href="/") Iniciar Sesión
+        .mobile-menu
+            .col-md-2.col-sm-2.col-2 
+                .dropdown
 
+                    button.btn.btn-secondary.dropdown-toggle(id="dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-expanded="false") jjj
+                        img( src="./assets/images/burger-mobile.png")
+                    ul.dropdown-menu(aria-labelledby="dropdownMenuButton")
+                        li
+                            a.dropdown-item(href="/") Cómo funciona
+                        li
+                            a.dropdown-item(href="/") ¿Por Qué Nosotros?
+                        li
+                            a.dropdown-item(href="/") Comentarios
+            .col-md-4.col-sm-4.col-4 
+                a.logo-link(href="/")
+                    img.logo-link__img(src="./assets/images/logo.svg" alt="logo")
+            .col-md-6.col-sm-6.col-6
+                li.menu-select__item
+                    button Get started
+
+            
                 

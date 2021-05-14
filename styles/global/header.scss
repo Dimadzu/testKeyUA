@@ -9,6 +9,10 @@
     }
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .menu {
     height: 37px;
     &-select {
@@ -53,6 +57,48 @@
                 border: 1px solid #CC2229;
                 transition: .5s;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .header {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header {
+        width: 100vw;
+        border-bottom: 1px solid #C1C7D6;
+    }
+    .menu-dekstop {
+        display: none;
+    }
+    .mobile-menu {
+        max-width: 575px;
+        display: flex;
+        height: 64px;
+        position: relative;
+        .dropdown-toggle {
+            background-color: inherit;
+            border-color: inherit;
+            box-shadow: inherit;
+            margin-top: 20%;
+        }
+        .dropdown-menu {
+            width: 200%;
+            z-index: 10;
+            li:hover,
+            li:focus {
+                background-color: rgb(206, 200, 200);
+            }
+        }
+        .logo-link {
+            @include centerer-y();
+        }
+        .menu-select__item {
+            margin-top: 8%;
         }
     }
 }

@@ -121,3 +121,42 @@
         margin: 16px auto 0 auto;
     }
 }
+
+//media 575px
+@media screen and (max-width: 575px) {
+    .revice {
+        width: 100%;
+        .oval_bg {
+            display: none;
+        }
+        .wrapper {
+            width: 100%;
+            padding: 0 15px;
+            .row {
+                text-align: center;
+                .revice__title {
+                    font-size: 22px;
+                    line-height: 29px;
+                }
+            }
+        }
+        &-left {
+            text-align: left;
+            .oval_bg_1 {
+                transform: rotate(-45deg);
+                left: -0px;
+                top: -10%;
+                z-index: 0;
+            }
+        }
+        .before__right::before {
+            background-image: url(../../assets/images/ok.png);
+        }
+        &-right {
+            padding: 0;
+            &_logo {
+                text-align: left;
+            }
+        }
+    }
+}

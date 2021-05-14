@@ -221,3 +221,264 @@
         }
     }
 }
+
+.desription-container-mobile {
+    display: none;
+}
+
+// media 1200px
+@media screen and (max-width: 1200px) {
+    .hero {
+        .form {
+            top: 500px;
+        }
+    }
+    .form-check-label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    .wrapper-hero {
+        width: 100vw;
+    }
+    .hero-title {
+        &__h1 {
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+    .hero-bg {
+        background-size: cover;
+        height: 700px;
+        background-position: right;
+    }
+    .desription-container {
+        &_item {
+            width: 420px;
+            &__text {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+//media 768px 
+@media screen and (max-width: 660px) {
+    .form-right {
+        margin-top: 0px;
+    }
+    .desription-container {
+        &_item {
+            display: flex;
+            width: 400px;
+            margin-top: 9px;
+            &__img {
+                margin-top: -7%;
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+//media 575px 
+@media screen and (max-width: 575px) {
+    .hero {
+        min-height: 800px;
+        padding: 0 10px;
+        .form {
+            width: 95%;
+            margin: 0 auto;
+            position: inherit;
+            @include centerer-x();
+            background: linear-gradient(333.24deg, #FAD961 -52.95%, #FF6E00 93.1%);
+            top: 62%;
+            .relative {
+                position: inherit;
+                padding: 0 15px;
+            }
+            &-left {
+                padding: 19px 40px 34px 40px;
+                height: 100%;
+                background: linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%);
+                border-radius: 10px 10px 0 0px;
+                .form-banner {
+                    position: absolute;
+                    left: 4%;
+                    top: 0px;
+                    width: 92%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: flex-start;
+                    &-left {
+                        padding: 1px 5px 1px 8px;
+                        width: 76%;
+                        height: 102%;
+                        background-image: url(../../assets/images/form-banner-left.png);
+                        background-size: cover;
+                        display: flex;
+                        background-repeat: no-repeat;
+                        box-shadow: -5px 3px 6px rgba(0, 0, 0, 0.5);
+                        h4 {
+                            font-size: 17px;
+                            line-height: 19px;
+                        }
+                        .border {
+                            height: 38px;
+                            width: 1px;
+                            margin-left: 2px;
+                        }
+                        &-desc {
+                            height: 80%;
+                            margin: auto 0px auto 5px;
+                            p {
+                                font-weight: 200;
+                                font-size: 10px;
+                                line-height: 12px;
+                            }
+                        }
+                    }
+                    &-right {
+                        width: 26%;
+                        height: 111%;
+                        background-image: url(../../assets/images/form-banner-right.png);
+                        text-align: right;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        padding: 3px 33px;
+                        h4 {
+                            font-size: 27px;
+                        }
+                        p {
+                            font-size: 7px;
+                            margin: -9px 5px 0 0;
+                        }
+                    }
+                }
+                h3 {
+                    font-weight: bold;
+                    font-size: 21px;
+                    margin-top: 8%;
+                }
+                p {
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: 0.727273px;
+                    margin-top: 39px;
+                    color: #FFFFFF;
+                }
+            }
+            &-right {
+                border-radius: 0px 0px 10px 10px;
+                margin-left: 0px;
+                margin-top: -6px;
+            }
+            .form-check-input {
+                border: 1px solid #CC2229;
+            }
+            .form-check-input:checked[type=radio] {
+                background-image: url(../../assets/images/oval.png);
+                background-size: contain;
+            }
+            &-right {
+                &_wrapper {
+                    width: 100%;
+                    .form-container {
+                        input {
+                            width: 200px;
+                        }
+                        .select-input {
+                            display: flex;
+                            &-cont {
+                                width: 47px;
+                                height: 100%;
+                                background-color: white;
+                                margin-left: -2px;
+                                border-radius: 0 5px 5px 0;
+                                display: flex;
+                                &-img {
+                                    width: 17px;
+                                    height: 17px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin: auto;
+                                    img {
+                                        width: 8px;
+                                        height: 17px;
+                                    }
+                                    .select-input-cont_img__up {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
+                        }
+                        .form-container__input__first-select {
+                            border-radius: 5px 0 0 5px;
+                        }
+                        .form-container__input__first {
+                            width: 244px;
+                        }
+                    }
+                    p {
+                        font-weight: normal;
+                        font-size: 11px;
+                        line-height: 15px;
+                        letter-spacing: 0.727273px;
+                        color: #FFFFFF;
+                        margin-top: 6px;
+                    }
+                }
+            }
+        }
+    }
+    .form-check-label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    .wrapper-hero {
+        width: 100vw;
+        .row {
+            max-height: 346px;
+        }
+    }
+    .hero-title {
+        &__h1 {
+            margin-top: 70px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+    .hero-bg {
+        background-image: url(../../assets/images/divorse_bg_hero_mobile.png);
+        background-size: cover;
+        height: 300px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    .desription-container {
+        &_item {
+            width: 390px;
+            margin-top: 5px;
+            &__img {
+                margin-top: -7%;
+            }
+            &__text {
+                font-size: 14px;
+                line-height: 19px;
+                margin-left: 20px;
+            }
+        }
+    }
+    .desription-container-mobile {
+        display: block;
+    }
+    .desription-container-decstop {
+        display: none;
+    }
+}

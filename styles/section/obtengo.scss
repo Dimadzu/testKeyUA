@@ -57,3 +57,51 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    .obtengo {
+        .wrapper {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .obtengo {
+        .wrapper {
+            width: 100%;
+        }
+    }
+    .obtengo-container {
+        margin-top: 30px;
+        height: 599px;
+        h2 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .obtengo-container_left {
+            height: 40%;
+            &__image {
+                position: absolute;
+                left: 0px;
+                top: -110px;
+            }
+            &__bg {
+                display: none;
+            }
+        }
+        .obtengo-container_right {
+            height: 100%;
+            &__dedcription {
+                h3 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+}
